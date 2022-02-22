@@ -2,4 +2,4 @@
 
 ## Simplilearn Self Learning Course
 
-[Simplilearn](https://www.example.com/Simplilearn)
+[Simplilearn](https://melvincv.github.io/learn-python/Simplilearn)
