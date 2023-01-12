@@ -9,17 +9,23 @@
 
 # Get values for vars from the user.
 print("Welcome to the tip calculator.")
-bill_amount = float(input("What was the total bill? $"))
+bill = float(input("What was the total bill? $"))
 tip = int(input("How much tip would you like to give? 10, 12 or 15? "))
 pax = int(input("How many people to split the bill? "))
 
 # Calculate the amount to be paid per person, inclusive of tip.
 # Math according to PE(MD)(AS) rule
-bill_per_pax = (bill_amount / pax) * (1 + tip / 100)
+bill_per_pax = (bill / pax) * (1 + tip / 100)
+total_bill = (tip / 100 * bill) + bill
+bill_per_pax2 = total_bill / pax
 
 # Round it up to 2 decimal places
 round_amount = round(bill_per_pax, 2)
+round_amount2 = round(bill_per_pax2, 2)
 
 # Print Output
 message = f"Each person should pay: ${round_amount}"
+print(message)
+
+message = f"Each person should pay: ${round_amount2}"
 print(message)
