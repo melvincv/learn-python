@@ -22,6 +22,7 @@ elif size == "L":
         bill += 3
 else:
     print("Invalid input. Enter S, M or L")
+    exit
 
 if extra_cheese == "Y":
     bill += 1
