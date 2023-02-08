@@ -26,7 +26,10 @@ scissors = '''
 '''
 
 #Write your code below this line 👇
+
+# Import the random module
 import random
+
 # Prompt the user
 yourchoice = int(
     input(
@@ -42,15 +45,17 @@ if yourchoice > 2 or yourchoice < 0:
 choices = [rock, paper, scissors]
 print("\nYou chose:")
 print(choices[yourchoice])
+
 # Allow the computer to choose a random art.
 compchoice = random.randint(0,2)
 print("\nComputer chose:")
 print(choices[compchoice])
+
 # Rules of the game:
 # Rock wins against scissors.
 # Scissors win against paper.
 # Paper wins against rock.
-#
+
 # Find out who won
 if (yourchoice == 0) and (compchoice == 2):
   print("You win.")
